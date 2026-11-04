@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pashan Lake Ecological Assessment | Devashree Rajebahadur</title>
+  <meta name="description" content="Ecological assessment for restoration planning of Pashan Lake, Pune using remote sensing and GIS.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <a class="brand" href="index.html">Devashree R.</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
+  <nav id="navLinks" aria-label="Main">
+    <a href="index.html#about">About</a>
+    <a href="index.html#education">Education</a>
+    <a href="index.html#skills">Skills</a>
+    <a class="active" href="index.html#projects">Projects</a>
+    <a href="index.html#experience">Experience</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <!-- HEADING -->
+  <section class="hero slim">
+    <svg class="contours" id="contours" aria-hidden="true" preserveAspectRatio="xMidYMid slice"></svg>
+    <div class="wrap">
+      <div class="hero-text">
+        <a class="back" href="index.html#projects">← All projects</a>
+        <p class="kicker">Ongoing group project</p>
+        <h1>Ecological assessment for restoration planning of Pashan Lake, Pune</h1>
+        <div class="meta">
+          <span><strong>Tools:</strong> ArcGIS Pro, Google Earth Engine</span>
+          <span><strong>Data:</strong> Sentinel-2, Landsat-8, LISS-IV</span>
+          <span><strong>Period:</strong> [Month Year – Month Year]</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH QUESTION -->
+  <section class="section" id="question">
+    <div class="wrap two-col">
+      <div><h2>Research question</h2></div>
+      <div>
+        <p class="question">[How have land use, water extent and vegetation health around Pashan Lake changed over the last decade, and what does this mean for restoration planning?]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRODUCTION -->
+  <section class="section alt" id="introduction">
+    <div class="wrap two-col">
+      <div><h2>Introduction</h2></div>
+      <div class="prose">
+        <p>[Describe the study area: where Pashan Lake is, its size, why it matters ecologically and to the city.]</p>
+        <p>[Explain the problem: pollution sources, eutrophication, urban pressure, loss of vegetation or water spread.]</p>
+        <p>[State the aim and why remote sensing and GIS are suitable tools for this question.]</p>
+        <figure class="figure">
+          <img src="images/pashan-lake.jpg" alt="Study area map of Pashan Lake">
+          <figcaption>Figure 1. Study area: Pashan Lake and its surroundings, Pune.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHODOLOGY -->
+  <section class="section" id="methodology">
+    <div class="wrap two-col">
+      <div><h2>Methodology</h2></div>
+      <div class="prose">
+        <ol class="steps">
+          <li>
+            <h4>Data collection</h4>
+            <p>[Which images, which years, which seasons, and why. Cloud cover and resolution choices.]</p>
+          </li>
+          <li>
+            <h4>Pre-processing</h4>
+            <p>[Atmospheric correction, clipping to the study area, compositing in Google Earth Engine.]</p>
+          </li>
+          <li>
+            <h4>Land use and land cover classification</h4>
+            <p>[Classes used, classifier or method, training samples, accuracy assessment.]</p>
+          </li>
+          <li>
+            <h4>Spectral indices</h4>
+            <p>[For example NDVI for vegetation health and NDWI for water extent, with the formulas you used.]</p>
+          </li>
+          <li>
+            <h4>Fieldwork</h4>
+            <p>[Vegetation sampling with line and belt transects: how many, where, what you recorded.]</p>
+          </li>
+        </ol>
+        <figure class="figure">
+          <img src="images/pashan-workflow.jpg" alt="Methodology workflow diagram">
+          <figcaption>Figure 2. Methodology workflow.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="section alt" id="results">
+    <div class="wrap two-col">
+      <div><h2>Results</h2></div>
+      <div class="prose">
+        <div class="stats">
+          <div class="stat"><b>[00%]</b><span>[Change in water spread]</span></div>
+          <div class="stat"><b>[00 ha]</b><span>[Built-up area increase]</span></div>
+          <div class="stat"><b>[0.00]</b><span>[Mean NDVI change]</span></div>
+          <div class="stat"><b>[00%]</b><span>[Classification accuracy]</span></div>
+        </div>
+        <p>[Describe the main land use and land cover changes across the years.]</p>
+        <figure class="figure">
+          <img src="images/pashan-lulc.jpg" alt="Land use and land cover maps across years">
+          <figcaption>Figure 3. Land use and land cover change, [year] to [year].</figcaption>
+        </figure>
+        <p>[Describe vegetation and water trends, and anything the fieldwork showed that the imagery did not.]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONCLUSION -->
+  <section class="section" id="conclusion">
+    <div class="wrap two-col">
+      <div><h2>Conclusion</h2></div>
+      <div class="prose">
+        <p>[Answer the research question directly in two or three sentences.]</p>
+        <p>[Recommendations for restoration planning that follow from your results.]</p>
+        <p>[Limitations (resolution, cloud cover, limited field samples) and what you would do next.]</p>
+        <div class="actions">
+          <a class="btn primary" href="index.html#projects">Back to projects</a>
+          <a class="btn" href="index.html#contact">Get in touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Devashree Rajebahadur · Built with HTML, CSS and a little JavaScript</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

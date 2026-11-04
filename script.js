@@ -45,7 +45,7 @@ document.querySelectorAll('main section[id]').forEach(s => observer.observe(s));
 })();
 
 // If a project image or the portrait is missing, show a contour placeholder instead of a broken icon
-document.querySelectorAll('.project img, .portrait img').forEach(img => {
+document.querySelectorAll('.project img, .portrait img, .figure img').forEach(img => {
   img.addEventListener('error', () => {
     if (img.closest('.portrait')) { img.style.display = 'none'; return; }
     const ph = document.createElement('div');
