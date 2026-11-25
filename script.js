@@ -1,5 +1,3 @@
-// Footer year
-document.getElementById('year').textContent = new Date().getFullYear();
 
 // Mobile menu
 const menuBtn = document.getElementById('menuBtn');

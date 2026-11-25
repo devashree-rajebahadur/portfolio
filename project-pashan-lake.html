@@ -13,7 +13,7 @@
 <body>
 
 <header class="nav" id="top">
-  <a class="brand" href="index.html">Devashree R.</a>
+  <a class="brand" href="index.html">Devashree Rajebahadur | Geospatial Portfolio</a>
   <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
   <nav id="navLinks" aria-label="Main">
     <a href="index.html#about">About</a>
@@ -32,12 +32,12 @@
     <div class="wrap">
       <div class="hero-text">
         <a class="back" href="index.html#projects">← All projects</a>
-        <p class="kicker">Ongoing group project</p>
-        <h1>Ecological assessment for restoration planning of Pashan Lake, Pune</h1>
+        <p class="kicker">Group project</p>
+        <h1>Geospatial and ecological assessment for restoration planning of Pashan Lake, Pune</h1>
         <div class="meta">
           <span><strong>Tools:</strong> ArcGIS Pro, Google Earth Engine</span>
-          <span><strong>Data:</strong> Sentinel-2, Landsat-8, LISS-IV</span>
-          <span><strong>Period:</strong> [Month Year – Month Year]</span>
+          <span><strong>Data:</strong> Sentinel-2</span>
+          <span><strong>Period:</strong> August – October 2026</span>
         </div>
       </div>
     </div>
@@ -48,7 +48,9 @@
     <div class="wrap two-col">
       <div><h2>Research question</h2></div>
       <div>
-        <p class="question">[How have land use, water extent and vegetation health around Pashan Lake changed over the last decade, and what does this mean for restoration planning?]</p>
+        <p class="question">• How has the spatial distribution of water hyacinth (Eichhornia crassipes) in Pashan Lake changed over the past decade, and what are the implications for biodiversity and ecosystem health in Pashan Lake? <br>
+          
+          • How have land use land cover patterns around Pashan Lake changed over the past decade, and how do urbanization, inlet pollution, and other observed anthropogenic pressures influence the identification of priority areas for restoration planning?</p>
       </div>
     </div>
   </section>
@@ -58,12 +60,25 @@
     <div class="wrap two-col">
       <div><h2>Introduction</h2></div>
       <div class="prose">
-        <p>[Describe the study area: where Pashan Lake is, its size, why it matters ecologically and to the city.]</p>
-        <p>[Explain the problem: pollution sources, eutrophication, urban pressure, loss of vegetation or water spread.]</p>
-        <p>[State the aim and why remote sensing and GIS are suitable tools for this question.]</p>
+        <p>Pashan Lake is an artificial lake in located in Pune, Maharashtra, which has, since its creation in 1868, become
+an important wetland habitat for both resident and migratory birds. The lake is
+situated within a rapidly developing suburban landscape characterised by residential
+settlements, road networks, institutional areas, and recreational spaces. Its location within
+the Ramnadi drainage system establishes an important hydrological connection between the
+lake, its upstream catchment and the downstream Mula River system. <br>
+
+This research project aims to assess
+the ecological condition of Pashan Lake over the past decade using satellite-derived NDVI
+and NDWI indices and on-ground vegetation measurements. It also examines anthropogenic
+pressures through LULC change analysis and investigates the lake’s
+inlets, outlets and potential sources of pollution, with the goal of identifying key factors
+contributing to lake degradation and informing restoration strategies. Field techniques in the
+study include random vegetation sampling to study ecological community metrics, boundaries
+and spatial barrier mapping, and identification of sources of pollution. </p>
+        
         <figure class="figure">
-          <img src="images/pashan-lake.jpg" alt="Study area map of Pashan Lake">
-          <figcaption>Figure 1. Study area: Pashan Lake and its surroundings, Pune.</figcaption>
+          <img src="uploads/studyareamap.jpg" alt="Study area map of Pashan Lake">
+          <figcaption>Study area: Pashan Lake and its boundaries, mapped in the field with Epicollect5.</figcaption>
         </figure>
       </div>
     </div>
@@ -77,23 +92,21 @@
         <ol class="steps">
           <li>
             <h4>Data collection</h4>
-            <p>[Which images, which years, which seasons, and why. Cloud cover and resolution choices.]</p>
-          </li>
-          <li>
-            <h4>Pre-processing</h4>
-            <p>[Atmospheric correction, clipping to the study area, compositing in Google Earth Engine.]</p>
+            <p>Cloud free Level-2A Sentinel-2 images from the post-monsoon period were used for analysis. Sentinel-2 was chosen for its high spatial resolution and multispectral capabilities.</p>
           </li>
           <li>
             <h4>Land use and land cover classification</h4>
-            <p>[Classes used, classifier or method, training samples, accuracy assessment.]</p>
+            <p>The imagery was classified into four land cover categories: water,
+vegetation, built-up land and barren land, using a supervised classification algorithm (Random Forest)in Google Earth Engine. 
+</p>
           </li>
           <li>
             <h4>Spectral indices</h4>
-            <p>[For example NDVI for vegetation health and NDWI for water extent, with the formulas you used.]</p>
+            <p>NDVI and NDWI were calculated to assess vegetation health and water extent, respectively.</p>
           </li>
           <li>
             <h4>Fieldwork</h4>
-            <p>[Vegetation sampling with line and belt transects: how many, where, what you recorded.]</p>
+            <p>Vegetation sampling with line and belt transects to calculate ecological community metrics: six line transects were run to collect data on native and invasive plant species, and two belt transects were used to assess the density of invasive weeds around the lake's shoreline. </p>
           </li>
         </ol>
         <figure class="figure">
